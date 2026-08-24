@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --theme-primary: #2563eb;
+  --theme-primary-hover: #1d4ed8;
+  --theme-secondary: #0ea5e9;
+  --theme-accent: #38bdf8;
+  --theme-bg: #f8fafc;
+  --theme-surface: #ffffff;
+  --theme-text: #0f172a;
+  --theme-text-muted: #64748b;
+  --theme-border: #e2e8f0;
+  --theme-hero-overlay: rgba(15, 23, 42, 0.55);
+}
+
+@theme inline {
+  --color-theme-primary: var(--theme-primary);
+  --color-theme-primary-hover: var(--theme-primary-hover);
+  --color-theme-secondary: var(--theme-secondary);
+  --color-theme-accent: var(--theme-accent);
+  --color-theme-bg: var(--theme-bg);
+  --color-theme-surface: var(--theme-surface);
+  --color-theme: var(--theme-text);
+  --color-theme-muted: var(--theme-text-muted);
+  --color-theme-border: var(--theme-border);
+}
+
+html[data-text-size="small"] {
+  font-size: 14px;
+}
+
+html[data-text-size="medium"] {
+  font-size: 16px;
+}
+
+html[data-text-size="large"] {
+  font-size: 18px;
+}
+
+html[data-font="inter"] body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+html[data-font="roboto"] body {
+  font-family: var(--font-roboto), system-ui, sans-serif;
+}
+
+html[data-font="open-sans"] body {
+  font-family: var(--font-open-sans), system-ui, sans-serif;
+}
+
+html[data-font="poppins"] body {
+  font-family: var(--font-poppins), system-ui, sans-serif;
+}
+
+html[data-font="lato"] body {
+  font-family: var(--font-lato), system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
