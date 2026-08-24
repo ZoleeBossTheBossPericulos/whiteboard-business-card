@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///workspace/src/app/page.tsx"],"sourcesContent":["import { Contact } from \"@/components/sections/Contact\";\nimport { Description } from \"@/components/sections/Description\";\nimport { Gallery } from \"@/components/sections/Gallery\";\nimport { Hero } from \"@/components/sections/Hero\";\nimport { Footer } from \"@/components/layout/Footer\";\nimport { Header } from \"@/components/layout/Header\";\nimport { CustomizationPanel } from \"@/components/ui/CustomizationPanel\";\nimport { JsonLd } from \"@/components/seo/JsonLd\";\n\nexport default function Home() {\n  return (\n    <>\n      <JsonLd />\n      <Header />\n      <main id=\"main-content\">\n        <Hero />\n        <Description />\n        <Gallery />\n        <Contact />\n      </main>\n      <Footer />\n      <CustomizationPanel />\n    </>\n  );\n}\n"],"names":["Home","JsonLd","Header","id","Hero","Description","Gallery","Contact","Footer","CustomizationPanel"],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AASe,SAASA;IACtB,qBACE;;0BACE,8OAACC;;;;;0BACD,8OAACC;;;;;0BACD,8OAAC;gBAAKC,IAAG;;kCACP,8OAACC;;;;;kCACD,8OAACC;;;;;kCACD,8OAACC;;;;;kCACD,8OAACC;;;;;;;;;;;0BAEH,8OAACC;;;;;0BACD,8OAACC;;;;;;;;;;;AAGP"}}]
+}
